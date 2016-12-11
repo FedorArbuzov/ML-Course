@@ -20,7 +20,7 @@ from sklearn.neighbors import KNeighborsRegressor
 boston = load_boston()
 boston.data = scale(boston.data)
 
-#create object for kNN
+#create object for cross validation
 kf = KFold(n_splits=5, random_state=42, shuffle=True)
 
 # variable for best p in kNN
@@ -50,8 +50,9 @@ for p_main in np.linspace(1.0, 10.0, num=200):
     # take average result
     temp_p_val = sum(arr_of_p) / len(arr_of_p)
 
-    # if result is better change k
+    # if result is better change p
     if temp_p_val > p_val:
         p_val = temp_p_val
         p_it = p_main
 print(p_it)
+# result p
