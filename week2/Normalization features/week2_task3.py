@@ -1,7 +1,7 @@
 #Normalization features
 #task3
 
-#
+# numpy for converting dataframe to np.array
 import numpy as np
 
 # import perceptron
@@ -61,4 +61,4 @@ new_predictions = clf.predict(X_test_scaled)
 # accuracy result
 print(accuracy_score(Y_test, new_predictions))
 
-# print result
+# result 0.56 ?
