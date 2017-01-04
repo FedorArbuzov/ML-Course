@@ -4,7 +4,7 @@
 # for csv read
 import pandas
 
-# for knn algorithm
+# for knn algorithm 
 from sklearn.neighbors import KNeighborsClassifier
 
 # for cross validation
