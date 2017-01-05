@@ -1,5 +1,5 @@
-#Metrics quality classification
-#task2
+# Metrics quality classification
+# task2
 
 # numpy for converting dataframe to np.array
 import numpy as np
